@@ -9,7 +9,7 @@ const typographyVariants = cva(cn('', switzer.className), {
     variant: {
       display: 'text-4xl leading-120% lg:text-8xl xl:text-160',
       display2: 'text-[32px] leading-130% lg:text-8xl',
-      h1: 'text-[32px] leading-130% lg:text-64',
+      h1: 'text-[32px] leading-130% lg:text-90',
       h2: 'text-2xl leading-130% lg:text-5xl',
       h3: 'text-xl leading-130% lg:text-[32px]',
       h4: 'text-lg leading-130% lg:text-2xl',

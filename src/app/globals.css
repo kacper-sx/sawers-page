@@ -5,10 +5,12 @@
 @layer base {
   :root {
     --sawers-blue: 238, 75%, 51%;
-    --sawers-sun: 48, 90%, 60%;
+    --sawers-sun: 49, 100%, 45%;
+    --sawers-red: 2, 80%, 50%;
 
     --dark-foreground-62: 238, 75%, 51%, 0.627;
     --dark-foreground-35: 238, 75%, 51%, 0.35;
+    --dark-foreground-10: 238, 75%, 51%, 0.102;
 
     --white-foreground: 0, 0%, 100%;
     --white-foreground-76: 0, 0%, 100%, 0.761;
@@ -23,7 +25,7 @@
 
     --accent: 43, 100%, 52%;
 
-    --background-photo: 214, 32%, 91%, 0.922;
+    --background-photo: 210, 35%, 98%, 0.912;
 
     --shadow: 244, 45%, 24%, 0.322;
 

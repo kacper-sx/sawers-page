@@ -1,12 +1,12 @@
 export const headerVariants = {
   hidden: {
-    y: -69.5,
+    y: -90,
     opacity: 0,
   },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { ease: 'easeInOut', duration: 0.4 },
+    transition: { ease: 'easeInOut', duration: 0.1 },
   },
 }
 
@@ -29,6 +29,10 @@ export const navListVariants = {
 export const navListItemVariants = {
   hidden: { y: 20, opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { bounce: 0 } },
+}
+export const navListItemVariants2 = {
+  hidden: { x: 20, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { bounce: 0 } },
 }
 
 export const navLinkVariants = {

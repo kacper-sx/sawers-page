@@ -44,6 +44,10 @@ module.exports = {
       fontSize: {
         160: '160px',
         64: '64px',
+        90: '90px',
+      },
+      maxWidth: {
+        card: '250px',
       },
       backgroundImage: {
         'logo-opacity':
@@ -78,10 +82,14 @@ module.exports = {
       colors: {
         'sawers-blue': 'hsl(var(--sawers-blue))',
         'sawers-sun': 'hsl(var(--sawers-sun))',
+        'sawers-red': 'hsl(var(--sawers-red))',
+        'arrow-gradient':
+          'linear-gradient(to bottom, rgba(36, 60, 90, 1), rgba(24, 82, 115, 1))',
 
         'dark-foreground': {
           62: 'hsla(var(--dark-foreground-62))',
           35: 'hsla(var(--dark-foreground-35))',
+          10: 'hsla(var(--dark-foreground-10))',
         },
 
         'white-foreground': {

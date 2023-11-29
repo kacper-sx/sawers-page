@@ -33,13 +33,14 @@ export default function Header({ withNavigation = true }: HeaderProps) {
   const [{ open: isMenuOpen }, setMenuOpen] = useAtom(mobileNavAtom)
   const isClient = useIsClient()
   return (
-    <div className='fixed top-0 z-40 flex w-full'>
+    <div className='fixed top-0 z-40 w-full'>
       <m.header
         initial='hidden'
         animate='visible'
         variants={headerVariants}
         className={cn(
-          'flex w-full items-center justify-between transition-all duration-500 s:px-2 s:py-[5px] s:backdrop-blur-[6px] lg:border-0 lg:px-16 lg:py-[18px] lg:backdrop-blur-[8.5px]'
+          'flex w-full items-center justify-between transition-all duration-500 s:px-2 s:py-[5px] s:backdrop-blur-[6px] lg:px-16 lg:py-[18px] lg:backdrop-blur-[8.5px]',
+          isMenuOpen ? 'bg-white' : 'bg-transparent'
         )}
       >
         <NavBar />

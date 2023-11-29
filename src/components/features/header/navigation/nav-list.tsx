@@ -1,7 +1,8 @@
 import { m } from 'framer-motion'
 import { useSetAtom } from 'jotai'
 import { mobileNavAtom } from '@/atoms/mobileNav'
-import { navListDataApp } from './data/nav-list-data'
+import { navListDataApp } from '../../../../data/nav-list-data'
+import { Typography } from '@/components/ui/typography/typography'
 
 import { cn } from '@/lib/utils'
 import {
@@ -27,9 +28,15 @@ export function NavigationList() {
             onClick={() => {
               setMobileNavState({ open: false })
             }}
-            className='border-b-2 pb-1 font-medium bg-clip-text active:bg-link-blue active:text-transparent'
+            className='font-medium bg-clip-text active:bg-link-blue active:text-transparent'
           >
-            {name}
+            <Typography
+              variant={'h2'}
+              weight={'semibold'}
+              className='text-sawers-blue border-b-2 border-sawers-sun'
+            >
+              {name}
+            </Typography>
           </Link>
         </m.li>
       ))}

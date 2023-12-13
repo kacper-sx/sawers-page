@@ -12,6 +12,7 @@ import {
 
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
+
 import { cva, VariantProps } from 'class-variance-authority'
 
 const Form = FormProvider
@@ -79,7 +80,7 @@ const FormItem = React.forwardRef<
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div ref={ref} className={cn('space-y-2', className)} {...props} />
+      <div ref={ref} className={cn('space-y-2 w-full', className)} {...props} />
     </FormItemContext.Provider>
   )
 })
@@ -98,7 +99,7 @@ const FormLabel = React.forwardRef<
   return (
     <Label
       ref={ref}
-      className={cn(error && 'text-destructive', className)}
+      className={cn(error && 'text-sawers-blue', className)}
       htmlFor={formItemId}
       variant={variant || 'form'}
       {...props}
@@ -139,7 +140,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn('text-muted-foreground text-sm', className)}
+      className={cn('text-sawers-blue text-sm', className)}
       {...props}
     />
   )
@@ -150,7 +151,7 @@ const messageVariants = cva('text-sm font-normal leading-[130%]', {
   variants: {
     variant: {
       input: 'text-sawers-red',
-      button: 'place-self-center text-secondary-foreground',
+      button: 'place-self-center text-sawers-blue',
     },
   },
   defaultVariants: {

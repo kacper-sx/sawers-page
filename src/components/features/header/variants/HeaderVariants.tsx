@@ -1,6 +1,6 @@
 export const headerVariants = {
   hidden: {
-    y: -90,
+    y: -100,
     opacity: 0,
   },
   visible: {

@@ -7,14 +7,18 @@ export function SharedFields() {
       .min(3, {
         message: 'Imię i nazwisko musi składać się z co najmniej 3 znaków.',
       })
-      .max(20, {
+      .max(30, {
         message: 'Imię i nazwisko nie może zawierać więcej niż 20 znaków.',
       }),
     email: z.string({ required_error: 'Adres e-mail jest wymagany' }).email({
       message: 'Adres e-mail musi być prawidłowy.',
     }),
     phone: z
-      .string({ required_error: 'Numer telefonu jest wymagany' })
+      .number({
+        required_error: 'Numer telefonu jest wymagany',
+        invalid_type_error:
+          'Serio miałem na to pozwolić? Wprowadź numer a nie znaki',
+      })
       .min(5, {
         message: 'Numer telefonu musi składać się z co najmniej 5 znaków.',
       })
@@ -23,17 +27,12 @@ export function SharedFields() {
       }),
     message: z
       .string({ required_error: 'Wiadomość jest wymagana' })
-      .min(10, {
+      .min(5, {
         message: 'Wiadomość musi składać się z co najmniej 10 znaków.',
       })
       .max(255, {
         message: 'Wiadomość nie może zawierać więcej niż 255 znaków.',
       }),
-    terms: z.boolean({
-      errorMap: () => ({
-        message: 'Musisz zaakceptować regulamin.',
-      }),
-    }),
   })
 
   return ObjectSharedFields

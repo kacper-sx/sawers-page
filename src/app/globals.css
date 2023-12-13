@@ -63,13 +63,3 @@
     --ring: 12 6.5% 15.1%;
   } */
 }
-
-::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
-  background: hsl(var(--white-foreground));
-}
-
-::-webkit-scrollbar-thumb {
-  background: hsl(var(--ipl-red));
-}

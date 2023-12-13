@@ -1,3 +1,4 @@
+'use client'
 import { Typography } from '@/components/ui/typography/typography'
 import { ContactForm } from './form'
 import { Banner } from '@/components/ui/custom/banner'

@@ -18,7 +18,7 @@ export function Advantages() {
         variants={bottomOpacityEntranceVariant({ delay: 0.3 })}
         variant={'h2'}
         weight={'semibold'}
-        className='text-sawers-blue'
+        className='text-sawers-blue text-center'
       >
         Poznaj zalety z oferowanych produtków i usług
       </MotionTypography>

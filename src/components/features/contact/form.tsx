@@ -1,5 +1,4 @@
 'use client'
-
 import { Checkbox } from '@/components/ui/checkbox'
 import { Banner } from '@/components/ui/custom/banner'
 import {
@@ -21,42 +20,33 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import * as z from 'zod'
 
-const defaultValues: z.infer<ReturnType<typeof SharedFields>> = {
-  message: '',
-  email: '',
-  fullName: '',
-  phone: '',
-  terms: false,
-}
-
 export function ContactForm() {
   const [state, setState] = React.useState<'loading' | 'ready'>('ready')
   const [showMessage, setShowMessage] = React.useState(false)
   const schemaClient = SharedFields()
   const form = useForm<z.infer<typeof schemaClient>>({
     resolver: zodResolver(schemaClient),
-    defaultValues: defaultValues,
   })
 
   function onSubmit(values: z.infer<typeof schemaClient>) {
     console.log(values)
-    form.reset(defaultValues)
+    form.reset()
   }
 
   return (
     <form
       onSubmit={form.handleSubmit(onSubmit)}
-      className='w-full xl:w-[500px]'
+      className='w-full xl:w-[550px]'
     >
       <Form {...form}>
-        <Banner className='flex flex-col gap-5 rounded-32 border border-gray-200 bg-white p-8'>
+        <Banner className='flex flex-col gap-6 rounded-32 border border-gray-200 bg-white p-8'>
           {/* fullName */}
           <FormField
             control={form.control}
             name='fullName'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Imię i nazwisko</FormLabel>
+                <FormLabel variant='form'>Imię i nazwisko</FormLabel>
                 <FormControl>
                   <Input
                     variant='form'
@@ -70,13 +60,13 @@ export function ContactForm() {
           />
 
           {/* email & phone */}
-          <div className='flex flex-col gap-5 lg:flex-row lg:gap-4'>
+          <div className='flex flex-col gap-5 lg:flex-row lg:gap-4 w-full'>
             <FormField
               control={form.control}
               name='email'
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Adres email</FormLabel>
+                  <FormLabel variant='form'>Adres email</FormLabel>
                   <FormControl>
                     <Input
                       variant='form'
@@ -94,7 +84,7 @@ export function ContactForm() {
               name='phone'
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Numer telefonu</FormLabel>
+                  <FormLabel variant='form'>Numer telefonu</FormLabel>
                   <FormControl>
                     <Input
                       variant='form'
@@ -114,7 +104,7 @@ export function ContactForm() {
             name='message'
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Twoja wiadomość</FormLabel>
+                <FormLabel variant='form'>Twoja wiadomość</FormLabel>
                 <FormControl>
                   <Textarea
                     variant='form'
@@ -123,29 +113,6 @@ export function ContactForm() {
                     {...field}
                   />
                 </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          {/* terms */}
-          <FormField
-            control={form.control}
-            name='terms'
-            render={({ field }) => (
-              <FormItem>
-                <div className='flex items-center gap-3'>
-                  <FormControl>
-                    <Checkbox
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                    />
-                  </FormControl>
-                  <FormLabel variant='terms'>
-                    <Link href='/terms'>Polityka prywatności</Link>
-                  </FormLabel>
-                </div>
-
                 <FormMessage />
               </FormItem>
             )}

@@ -9,7 +9,7 @@ import MainLinks from './main-links/main-links'
 export default function Footer() {
   return (
     <div className='flex flex-col w-full px-5 lg:px-[100px]'>
-      <div className='flex flex-col gap-8 lg:items-center items-start lg:justify-between lg:flex-row py-16 border-b-2'>
+      <div className='flex flex-col gap-8 lg:items-center items-start lg:justify-between lg:flex-row lg:py-16 py-8 border-b-2 '>
         <Link href={'/'} className='lg:w-1/2 w-11/12 place-self-center'>
           <Logo />
         </Link>

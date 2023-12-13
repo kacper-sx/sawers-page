@@ -22,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head />
       <body
         className={cn('font-switzer', switzer.variable, source_sans_3.variable)}
       >

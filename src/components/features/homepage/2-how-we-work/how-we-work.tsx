@@ -12,7 +12,7 @@ const MotionTypography = m(Typography)
 export function HowWeWork() {
   const workdata = HowWeWorkData()
   return (
-    <div className='flex flex-col bg-gray-100 lg:px-[100px] px-5 lg:pb-24 py-8 lg:py-0 lg:gap-16 gap-8 items-center'>
+    <div className='flex flex-col bg-gray-100 lg:px-[100px] px-5 lg:pb-24 py-8 lg:py-0 lg:gap-16 gap-5 items-center'>
       <MotionTypography
         initial='hidden'
         whileInView='visible'
@@ -31,7 +31,11 @@ export function HowWeWork() {
         className='flex flex-col lg:flex-row'
       >
         {workdata.map(({ title, insideIcon, content, outsideIcon }, index) => (
-          <m.li key={`${index}-how-we-work`} variants={WorkListItemVariants}>
+          <m.li
+            key={`${index}-how-we-work`}
+            variants={WorkListItemVariants}
+            className='m-0'
+          >
             <HowWeWorkSection
               title={title}
               insideIcon={insideIcon}

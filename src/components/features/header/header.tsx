@@ -12,26 +12,9 @@ import NavBar from './navigation/nav'
 
 import { headerVariants } from './variants/HeaderVariants'
 
-export function PreventScroll() {
-  React.useEffect(() => {
-    document.body.style.overflow = 'hidden'
-    document.body.style.height = '100dvh'
-    return () => {
-      document.body.style.height = 'auto'
-      document.body.style.overflow = 'unset'
-    }
-  }, [])
-
-  return null
-}
-
-interface HeaderProps {
-  withNavigation?: boolean
-}
-export default function Header({ withNavigation = true }: HeaderProps) {
-  const isMobile = useMediaQuery('(max-width: 768px)')
+export default function Header() {
   const [{ open: isMenuOpen }, setMenuOpen] = useAtom(mobileNavAtom)
-  const isClient = useIsClient()
+
   return (
     <div className='fixed top-0 z-40 w-full'>
       <m.header
@@ -39,7 +22,7 @@ export default function Header({ withNavigation = true }: HeaderProps) {
         animate='visible'
         variants={headerVariants}
         className={cn(
-          'flex w-full items-center justify-between transition-all duration-500 s:px-2 s:py-[5px] s:backdrop-blur-[6px] lg:px-16 lg:py-[18px] lg:backdrop-blur-[8.5px]',
+          'flex w-full items-center justify-between transition-all duration-500 s:px-3 s:py-4 s:backdrop-blur-[6px] lg:px-16 lg:py-[18px] lg:backdrop-blur-[8.5px]',
           isMenuOpen ? 'bg-white' : 'bg-transparent'
         )}
       >

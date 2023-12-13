@@ -16,10 +16,10 @@ export function HowWeWorkSection({
   outsideIcon,
 }: WorkData) {
   return (
-    <div className='flex flex-col lg:flex-row lg:gap-4 gap-5 px-2 my-2.5 lg:my-0 items-center'>
+    <div className='flex flex-col lg:flex-row lg:gap-4 gap-5 px-2 my-2 lg:my-0 items-center'>
       <Banner
         variant={'less-rounded'}
-        className='flex flex-col gap-4 px-5 py-5 max-w-card h-[250px] border-2 border-dark-foreground-35 shadow-md'
+        className='flex flex-col gap-4 px-5 py-5 max-w-card h-[250px] border border-dark-foreground-35 shadow-md'
       >
         <div className='flex gap-4 items-center'>
           {insideIcon}

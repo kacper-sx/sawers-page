@@ -1,3 +1,4 @@
+'use client'
 import { animated, useSpring } from '@react-spring/web'
 import React from 'react'
 import Image from 'next/image'
@@ -22,14 +23,14 @@ export function CarouselCard({ href, title, children }: CarouselCardProps) {
       style={styleProps}
       onPointerEnter={() => setShown(true)}
       onPointerLeave={() => setShown(false)}
-      className='lg:relative flex rounded-3xl'
+      className='flex rounded-3xl'
     >
       <div className='relative flex h-fit flex-col gap-4 pb-4 rounded-3xl items-center bg-white overflow-hidden s:w-[300px] lg:w-[500px] lg:pb-8'>
         <Image
           src={href}
           alt={'foto'}
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           className='object-cover'
         />
         <Typography

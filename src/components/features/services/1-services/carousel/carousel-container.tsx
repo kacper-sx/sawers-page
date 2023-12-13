@@ -69,8 +69,8 @@ export function CarouselContainer() {
   })
 
   return (
-    <div className='flex flex-col lg:gap-28 gap-10'>
-      <div className='flex flex-col gap-4 lg:gap-16 items-center'>
+    <div className='flex relative flex-col lg:gap-28 gap-10 items-center'>
+      <div className='flex relative flex-col gap-4 lg:gap-16 items-center'>
         <Typography variant={'h2'} weight={'bold'} className='text-sawers-blue'>
           Główne usługi
         </Typography>
@@ -86,7 +86,7 @@ export function CarouselContainer() {
           />
         </div>
       </div>
-      <div className='flex flex-col gap-4 lg:gap-16 items-center'>
+      <div className='flex relative flex-col gap-4 lg:gap-16 items-center'>
         <Typography variant={'h2'} weight={'bold'} className='text-sawers-blue'>
           Dodatkowe usługi
         </Typography>

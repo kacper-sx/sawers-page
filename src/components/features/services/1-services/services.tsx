@@ -12,10 +12,8 @@ export function Services() {
   const isClient = useIsClient()
 
   return (
-    <div className='relative flex min-h-screen py-24 bg-gray-100 scroll-mt-16 items-center justify-center gap-24'>
-      <div className='relative flex items-center justify-between s:flex-col s:gap-0 lg:flex-row lg:gap-32'>
-        <CarouselContainer />
-      </div>
+    <div className='flex relative min-h-screen py-8 lg:pb-24 lg:pt-16 bg-gray-100 scroll-mt-16 items-center justify-center gap-24'>
+      <CarouselContainer />
     </div>
   )
 }

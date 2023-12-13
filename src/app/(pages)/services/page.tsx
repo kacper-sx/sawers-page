@@ -7,6 +7,8 @@ export default function Home() {
         heading={'USŁUGI'}
         subHeading={'Klimatyzacja, pompy ciepła, fotowoltaika i inne'}
         src={'/photos/foto4.jpg'}
+        paragraph={'Poznaj nasze lepsze i jeszcze lepsze specjalizacje'}
+        isServices
       />
       <Services />
     </>

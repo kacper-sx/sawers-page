@@ -10,11 +10,13 @@ import { Advantages } from '@/components/features/homepage/4-advantages/advantag
 
 export default function Home() {
   return (
-    <main>
+    <main className='w-full'>
       <HeroOpacityBg
         heading={'SAWERS PARCZEW'}
         subHeading={'Za ciepło? Za zimno? Coś wymyślimy'}
         src={'/photos/foto1.jpg'}
+        paragraph={'Podnieś z nami swój kompfort mieszkania'}
+        normal
       />
       <WhySawers />
       <HowWeWork />

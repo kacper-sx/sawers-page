@@ -8,6 +8,8 @@ export default function Home() {
         heading={'KONTAKT'}
         subHeading={'Napisz, zadzwoń, pogadamy'}
         src={'/photos/foto2.jpg'}
+        paragraph={'Albo wypełnij formularz (tylko nas nie hakuj sqlem)'}
+        isContact
       />
       <ContactContent />
     </main>

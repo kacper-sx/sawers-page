@@ -7,6 +7,8 @@ export default function Home() {
         heading={'Certyfikaty i uprawnienia'}
         subHeading={'Mamy dyplomy ale w pracy nam to nie przeszkadza'}
         src={'/photos/foto3.jpg'}
+        paragraph={'Ale jak to mówią papier jest papier'}
+        normal
       />
     </main>
   )

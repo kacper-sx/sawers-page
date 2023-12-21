@@ -1,5 +1,8 @@
 import { HeroOpacityBg } from "@/components/common/hero-pages";
-
+export const metadata = {
+  title: "Certyfikaty",
+  description: "Strona przedstawiająca certyfikaty firmy Sawers",
+};
 export default function Home() {
   return (
     <main>

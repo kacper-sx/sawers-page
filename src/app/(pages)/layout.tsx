@@ -10,11 +10,28 @@ import Footer from "@/components/features/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Sawers",
-  description: "Sawers page",
-};
-
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    metadataBase: new URL("https://www.sawers.pl/"),
+    title: "Sawers Page",
+    description: "Strona firmowa Sawers Saweczko Robert z Parczewa",
+    applicationName: "Sawers Page",
+    authors: [{ name: "Sawers", url: "https://sawers.pl/" }],
+    generator: "Next.js",
+    keywords: [
+      "nextjs",
+      "klimatyzacja Parczew",
+      "pompy ciepła Parczew",
+      "fotowoltaika Parczew",
+      "Sawers",
+      "Saweczko Robert",
+      "firma Sawers",
+      "Sawers Parczew",
+    ],
+    creator: "Kacper Saweczko,",
+    robots: "index, follow",
+  };
+}
 export default function RootLayout({
   children,
 }: {

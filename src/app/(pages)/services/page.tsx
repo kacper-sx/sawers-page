@@ -1,16 +1,26 @@
-import { HeroOpacityBg } from '@/components/common/hero-pages'
-import { Services } from '@/components/features/services/1-services/services'
+import { HeroOpacityBg } from "@/components/common/hero-pages";
+import { Services } from "@/components/features/services/1-services/services";
+import { AirCondition } from "@/components/features/services/2-air/air";
+import { Photovoltaic } from "@/components/features/services/3-photo/photo";
+import { SideServices } from "@/components/features/services/side-services/side-services";
+export const metadata = {
+  title: "Usługi",
+  description: "Strona przedstawiająca usługi oferowane przez firmę Sawers",
+};
 export default function Home() {
   return (
     <>
       <HeroOpacityBg
-        heading={'USŁUGI'}
-        subHeading={'Klimatyzacja, pompy ciepła, fotowoltaika i inne'}
-        src={'/photos/foto4.jpg'}
-        paragraph={'Poznaj nasze lepsze i jeszcze lepsze specjalizacje'}
+        heading={"USŁUGI"}
+        subHeading={"Klimatyzacja, pompy ciepła, fotowoltaika i inne"}
+        src={"/photos/foto4.jpg"}
+        paragraph={"Poznaj nasze lepsze i jeszcze lepsze specjalizacje"}
         isServices
       />
       <Services />
+      <AirCondition />
+      <Photovoltaic />
+      <SideServices />
     </>
-  )
+  );
 }

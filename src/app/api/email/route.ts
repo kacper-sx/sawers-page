@@ -1,7 +1,12 @@
-import * as z from "zod";
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import { z } from "zod";
+import { EmailTemplate } from "@/components/features/contact/form-template";
+import { env } from "@/env.mjs";
 
-export function SharedFields() {
-  const ObjectSharedFields = z.object({
+const resend = new Resend(env.RESEND_KEY);
+export async function POST(request: Request) {
+  const schema = z.object({
     fullName: z
       .string({ required_error: "Imie i nazwisko są wymagane" })
       .min(3, {
@@ -35,5 +40,18 @@ export function SharedFields() {
       }),
   });
 
-  return ObjectSharedFields;
+  const data = (await request.json()) as unknown;
+  const values = schema.parse(data);
+  try {
+    await resend.emails.create({
+      from: "kacper.saweczko@o2.pl",
+      to: "ser2332@wp.pl",
+      subject: "Contact form submission",
+      react: EmailTemplate(values),
+      text: `Fullname: ${values.fullName}\nEmail: ${values.email}\nPhone: ${values.phone}\nMessage: ${values.message}`,
+    });
+    return NextResponse.json({ status: "SUCCESS" });
+  } catch (error) {
+    return NextResponse.json({ status: "ERROR" });
+  }
 }

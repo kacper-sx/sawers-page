@@ -13,20 +13,23 @@ const inter = Inter({ subsets: ["latin"] });
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL("https://www.sawers.pl/"),
-    title: "Sawers Page",
-    description: "Strona firmowa Sawers Saweczko Robert z Parczewa",
+    title:
+      "Sawers Saweczko Robert | Klimatyzacja | Pompy Ciepła | Fotowoltaika | Parczew",
+    description:
+      "Sawers Saweczko Robert to firma zajmująca się montażem klimatyzacji, pomp ciepła i fotowoltaiki na terenie Parczewa",
     applicationName: "Sawers Page",
     authors: [{ name: "Sawers", url: "https://sawers.pl/" }],
     generator: "Next.js",
     keywords: [
       "nextjs",
-      "klimatyzacja Parczew",
-      "pompy ciepła Parczew",
-      "fotowoltaika Parczew",
+      "Klimatyzacja Parczew",
+      "Pompy ciepła Parczew",
+      "Fotowoltaika Parczew",
       "Sawers",
       "Saweczko Robert",
-      "firma Sawers",
+      "Firma Sawers",
       "Sawers Parczew",
+      "Monitoring Parczew",
     ],
     creator: "Kacper Saweczko,",
     robots: "index, follow",

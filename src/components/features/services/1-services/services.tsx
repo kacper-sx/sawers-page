@@ -14,8 +14,8 @@ export function Services() {
   const isClient = useIsClient();
 
   return (
-    <div className="flex flex-col lg:flex-row relative min-h-[50vh] lg:py-16 py-8 bg-gray-100 scroll-mt-16 items-center justify-center gap-12">
-      <div className="flex flex-col gap-5 items-center justify-center">
+    <div className="flex flex-col lg:flex-row relative min-h-[50vh] lg:py-16 py-8 bg-gray-100 scroll-mt-16 items-center justify-center gap-5 lg:gap-12">
+      <div className="flex flex-col lg:gap-5 gap-2 items-center justify-center">
         <Typography
           variant={"h2"}
           weight={"semibold"}

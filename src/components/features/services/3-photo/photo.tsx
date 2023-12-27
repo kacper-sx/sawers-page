@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { m } from "framer-motion";
 import { bottomOpacityEntranceVariant } from "@/lib/framer-variants";
 import { Banner } from "@/components/ui/custom/banner";
+import { Photo } from "./data";
+import Link from "next/link";
 
 const paths = [
   "/services-photos/p1.jpg",
@@ -14,8 +16,10 @@ const paths = [
 ];
 export function Photovoltaic() {
   const MotionTypography = m(Typography);
+
+  const MotionBanner = m(Banner);
   return (
-    <div className="flex w-screen items-center bg-gray-100 flex-col px-5 gap-8 py-8 lg:gap-16 lg:py-16 lg:px-[200px]">
+    <div className="flex w-screen items-center bg-gray-100 flex-col px-5 gap-8 py-8 lg:gap-16 lg:px-[150px]">
       <MotionTypography
         initial="hidden"
         whileInView="visible"
@@ -26,44 +30,64 @@ export function Photovoltaic() {
       >
         Fotowoltaika
       </MotionTypography>
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full">
         <PhotoGrid
           photosPaths={paths}
           isLeft
-          className="relative z-10 order-first h-96 w-full lg:w-1/2 pt-16 lg:order-none lg:h-auto lg:pt-0"
+          className="relative z-10 order-first h-96 md:h-[500px] w-full xl:h-screen lg:order-none lg:h-auto"
         />
-        <Banner className="flex flex-col gap-5 items-center px-8 py-5 shadow-xl">
+        <MotionBanner
+          className="flex flex-col gap-6 w-full lg:max-w-lg xl:max-w-2xl lg:px-8 lg:py-8 px-5 py-5 shadow-lg items-center h-max place-self-center"
+          initial="hidden"
+          whileInView="visible"
+          variants={bottomOpacityEntranceVariant({ delay: 0.3 })}
+        >
           <Typography
             variant={"h3"}
             weight={"semibold"}
             className="text-sawers-blue"
           >
-            Oferta zawiera
+            Od czego zacząć?
           </Typography>
-          <Button variant={"sawersCall"} className="place-self-end">
-            Darmowa wycena
-          </Button>
+          <Typography variant={"p"} className="text-dark-foreground-62">
+            Rodzaj i wielkość instalacji fotowoltaicznej najlepiej ustalać na
+            podstawie rocznego roczliczenia zużytej energii elektrycznej. Po
+            dostarczeniu takiego dokumentu należy wyłącznie podać adres i
+            preferencje a my zajmiemy się resztą.
+          </Typography>
           <Typography
             variant={"h3"}
             weight={"semibold"}
             className="text-sawers-blue"
           >
-            Oferujemy projekt i realizację instalacji fotowoltaicznych
+            Oferta obejmuje:
           </Typography>
-          <Button variant={"sawersCall"} className="place-self-end">
-            Darmowa wycena
-          </Button>
+          <ul className="flex flex-col gap-5 list-disc w-max ">
+            {Photo.map(({ content }, index) => (
+              <Typography
+                weight={"medium"}
+                className="text-dark-foreground-62 lg:max-w-md max-w-[200px]"
+                key={`${index}-photo`}
+              >
+                <li>{content}</li>
+              </Typography>
+            ))}
+          </ul>
           <Typography
             variant={"h3"}
             weight={"semibold"}
             className="text-sawers-blue"
           >
-            Oferujemy projekt i realizację instalacji fotowoltaicznych
+            Finansowanie
           </Typography>
-          <Button variant={"sawersCall"} className="place-self-end">
-            Darmowa wycena
+          <Typography variant={"p"} className="text-dark-foreground-62">
+            Oprócz tradycyjnej umowy, istnieje możliwość podpisania umowy
+            lizingowej na instalację fotowoltaiczną.
+          </Typography>
+          <Button variant={"sawersCall"} asChild>
+            <Link href={"/contact"}>Darmowy projekt</Link>
           </Button>
-        </Banner>
+        </MotionBanner>
       </div>
     </div>
   );

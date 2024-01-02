@@ -1,4 +1,5 @@
 import { HeroOpacityBg } from "@/components/common/hero-pages";
+import { Collab } from "@/components/features/certificates/collab/collab";
 export const metadata = {
   title: "Certyfikaty",
   description: "Strona przedstawiająca certyfikaty firmy Sawers",
@@ -13,6 +14,7 @@ export default function Home() {
         paragraph={"Ale jak to mówią papier jest papier"}
         normal
       />
+      <Collab />
     </main>
   );
 }

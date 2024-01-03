@@ -1,0 +1,10 @@
+# Redirects all requests to the Next.js server
+
+
+# Basic settings
+[build.environment]
+  NODE_VERSION = "18"        # Set the Node.js version you're using
+
+# Use the Next.js plugin
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

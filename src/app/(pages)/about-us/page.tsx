@@ -2,8 +2,8 @@ import { HeroOpacityBg } from "@/components/common/hero-pages";
 import { Numbers } from "@/components/features/about/numbers/numbers";
 import { Person } from "@/components/features/about/person/person";
 export const metadata = {
-  title: "O nas",
-  description: "Strona przedstawiająca opis firmy Sawers",
+  title: "O nas | Sawers Saweczko Robert",
+  description: "Sawers Saweczko Robert w liczbach",
 };
 export default function Home() {
   return (

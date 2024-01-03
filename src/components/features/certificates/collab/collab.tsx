@@ -12,7 +12,7 @@ export function Collab() {
         weight={"semibold"}
         className="text-sawers-blue"
       >
-        Akredytacje monterskie
+        Posiadamy szkolenia monterskie producentów
       </Typography>
       {isClient ? <Card /> : null}
     </div>

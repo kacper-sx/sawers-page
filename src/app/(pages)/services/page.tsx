@@ -4,8 +4,8 @@ import { AirCondition } from "@/components/features/services/2-air/air";
 import { Photovoltaic } from "@/components/features/services/3-photo/photo";
 import { SideServices } from "@/components/features/services/side-services/side-services";
 export const metadata = {
-  title: "Usługi",
-  description: "Strona przedstawiająca usługi oferowane przez firmę Sawers",
+  title: "Usługi | Sawers Saweczko Robert",
+  description: "Klimatyzacja, pompy ciepła, fotowoltaika, monitoring i inne",
 };
 export default function Home() {
   return (

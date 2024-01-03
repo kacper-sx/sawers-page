@@ -19,14 +19,12 @@ export function Card() {
 
   let sectionsPerSlide;
   if (isMobile) {
-    sectionsPerSlide = 3; // One icon per slide on mobile
+    sectionsPerSlide = 4; // One icon per slide on mobile
   } else if (isTablet) {
     sectionsPerSlide = 2; // 2x2 grid on tablets
   } else {
-    sectionsPerSlide = 3; // 3 icons per slide on larger screens
+    sectionsPerSlide = 4; // 3 icons per slide on larger screens
   }
-
-  const slidesCount = Math.ceil(BuildBrandIcons.length / sectionsPerSlide);
 
   // Grupowanie ikon na slajdy
   const groupedIcons = [];

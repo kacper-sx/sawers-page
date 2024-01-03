@@ -59,14 +59,15 @@ type IconsType = {
 
 export const BuildBrandIcons: IconsType[] = [
   {
+    icon: <Mitsubishi className="h-full w-full" />,
+  },
+  {
     icon: <Lg className="h-full w-full" />,
   },
   {
     icon: <Cooper className="h-full w-full" />,
   },
-  {
-    icon: <Mitsubishi className="h-full w-full" />,
-  },
+
   {
     icon: <Gree className="h-full w-full" />,
   },
@@ -93,5 +94,17 @@ export const BuildBrandIcons: IconsType[] = [
   },
   {
     icon: <Mitsubishi className="h-full w-full" />,
+  },
+  {
+    icon: <Rotenso className="h-full w-full" />,
+  },
+  {
+    icon: <Hyundai className="h-full w-full" />,
+  },
+  {
+    icon: <Fujitsu className="h-full w-full" />,
+  },
+  {
+    icon: <Samsung className="h-full w-full" />,
   },
 ];

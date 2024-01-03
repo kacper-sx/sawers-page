@@ -1,8 +1,8 @@
 import { HeroOpacityBg } from "@/components/common/hero-pages";
 import { Collab } from "@/components/features/certificates/collab/collab";
 export const metadata = {
-  title: "Certyfikaty",
-  description: "Strona przedstawiająca certyfikaty firmy Sawers",
+  title: "Certyfikaty | Sawers Saweczko Robert",
+  description: "Certyfikaty i uprawnienia Sawers Saweczko Robert",
 };
 export default function Home() {
   return (

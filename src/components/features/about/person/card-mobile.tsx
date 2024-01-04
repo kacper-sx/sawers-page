@@ -8,7 +8,7 @@ export function PersonalCardSectionMobile() {
     <Banner className=" flex w-full flex-col items-start gap-4 overflow-hidden rounded-2xl bg-white pb-8 shadow-xl">
       <div className="flex w-full gap-2 border-b-[1px] border-sawers-blue">
         <Image
-          src={"/photos/bus.jpg"}
+          src={"/photos/robert.jpg"}
           alt={"photo"}
           width={0}
           height={0}
@@ -41,10 +41,11 @@ export function PersonalCardSectionMobile() {
           weight={"regular"}
           className="text-dark-foreground-62 "
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat labore et dolore.
+          Cześć, jestem Robert. Od 15 lat działam w branży chłodnictwa i
+          telewizji przemysłowej. Razem z zaufanymi patrnerami montujemy pompy
+          ciepła i instalacje fotowoltaiczne. Nie stosuję się do instrukcji,
+          robię po swojemu i lepiej. Działam sam bo tylko wtedy wiem, że robota
+          będzie zrobiona porządnie jak Pan Bóg przykazał.
         </Typography>
       </div>
     </Banner>

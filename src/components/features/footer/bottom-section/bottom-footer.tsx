@@ -8,7 +8,7 @@ type CustomLinkProps = {
   href: string;
 } & React.HTMLAttributes<HTMLElement>;
 
-const CustomLink = ({ text, href, ...props }: CustomLinkProps) => {
+export const CustomLink = ({ text, href, ...props }: CustomLinkProps) => {
   return (
     <Link
       href={href}
@@ -31,7 +31,10 @@ const CustomLink = ({ text, href, ...props }: CustomLinkProps) => {
 export default function BottomFooter() {
   return (
     <div className="flex flex-col lg:flex-row w-full justify-between py-4">
-      {/* <CustomLink text={'Terms and Conditions'} href={'/'}></CustomLink> */}
+      <CustomLink
+        text={"Polityka Prywatności"}
+        href={"/privacy-policy"}
+      ></CustomLink>
 
       <Typography variant="small2" className="text-dark-foreground-62">
         ©2023 - Sawers | All right reserved

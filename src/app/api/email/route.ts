@@ -44,9 +44,9 @@ export async function POST(request: Request) {
   const values = schema.parse(data);
   try {
     await resend.emails.create({
-      from: "kacper.saweczko@o2.pl",
+      from: "testujemy@sawers.pl",
       to: "ser2332@wp.pl",
-      subject: "Contact form submission",
+      subject: "Formularz ze strony",
       react: EmailTemplate(values),
       text: `Fullname: ${values.fullName}\nEmail: ${values.email}\nPhone: ${values.phone}\nMessage: ${values.message}`,
     });

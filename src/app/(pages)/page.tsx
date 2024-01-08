@@ -15,7 +15,7 @@ export default function Home() {
         heading={'SAWERS PARCZEW'}
         subHeading={'Za ciepło? Za zimno? Coś wymyślimy'}
         src={'/photos/foto1.jpg'}
-        paragraph={'Podnieś z nami swój kompfort mieszkania'}
+        paragraph={'Podnieś z nami swój komfort mieszkania'}
         normal
       />
       <WhySawers />

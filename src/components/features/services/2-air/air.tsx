@@ -55,27 +55,29 @@ export function AirCondition() {
             Oferujemy nastpępujące urządzenia
           </Typography>
           <div className="flex flex-col xl:flex-row gap-5 xl:gap-12 xl:ml-12 w-full justify-center items-center">
-            <ul className="flex flex-col gap-5 list-disc w-max">
+            <ul className="flex flex-col gap-5 list-disc w-max text-dark-foreground-62">
               {Pump.map(({ content }, index) => (
-                <Typography
-                  weight={"medium"}
-                  className="text-dark-foreground-62 w-max"
-                  key={`${index}-pump`}
-                >
-                  <li>{content}</li>
-                </Typography>
+                <li key={`${index}-pump`}>
+                  <Typography
+                    weight={"medium"}
+                    className="text-dark-foreground-62 w-max"
+                  >
+                    {content}
+                  </Typography>
+                </li>
               ))}
             </ul>
             <div className="flex w-3/4 bg-sawers-sun h-[2px] xl:hidden"></div>
-            <ul className="flex flex-col gap-5 list-disc w-max">
+            <ul className="flex flex-col gap-5 list-disc w-max text-dark-foreground-62">
               {Air.map(({ content }, index) => (
-                <Typography
-                  weight={"medium"}
-                  className="text-dark-foreground-62 w-max"
-                  key={`${index}-air`}
-                >
-                  <li>{content}</li>
-                </Typography>
+                <li key={`${index}-air`}>
+                  <Typography
+                    weight={"medium"}
+                    className="text-dark-foreground-62 w-max"
+                  >
+                    {content}
+                  </Typography>
+                </li>
               ))}
             </ul>
           </div>

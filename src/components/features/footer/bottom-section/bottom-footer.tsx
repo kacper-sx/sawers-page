@@ -19,7 +19,7 @@ export const CustomLink = ({ text, href, ...props }: CustomLinkProps) => {
         variant="small2"
         weight="semibold"
         className={cn(
-          "text-dark-foreground-62 underline underline-offset-2 group-hover:text-dark-foreground",
+          "text-sawers-blue underline underline-offset-2 group-hover:text-dark-foreground",
           props.className
         )}
       >
@@ -36,11 +36,11 @@ export default function BottomFooter() {
         href={"/privacy-policy"}
       ></CustomLink>
 
-      <Typography variant="small2" className="text-dark-foreground-62">
+      <Typography variant="small2" className="text-sawers-blue">
         ©2023 - Sawers | All right reserved
       </Typography>
       <div className="flex items-center gap-1">
-        <Typography variant="small2" className="text-dark-foreground-62">
+        <Typography variant="small2" className="text-sawers-blue">
           Designed and developed by
         </Typography>
 

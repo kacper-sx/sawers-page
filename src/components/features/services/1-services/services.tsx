@@ -25,7 +25,7 @@ export function Services() {
         </Typography>
         <IoMdHappy className="w-16 h-16 text-sawers-sun [animation-duration:5000ms] animate-spin" />
         <Typography
-          variant={"h4"}
+          variant={"h3"}
           weight={"semibold"}
           className="flex text-sawers-blue max-w-md text-center underline-offset-8 underline decoration-sawers-sun"
         >

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sawers.pl
+
+# Sitemaps
+Sitemap: https://sawers.pl/sitemap.xml

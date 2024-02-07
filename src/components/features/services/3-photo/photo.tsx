@@ -62,15 +62,16 @@ export function Photovoltaic() {
           >
             Oferta obejmuje:
           </Typography>
-          <ul className="flex flex-col gap-5 list-disc w-max ">
+          <ul className="flex flex-col gap-5 list-disc w-max text-dark-foreground-62">
             {Photo.map(({ content }, index) => (
-              <Typography
-                weight={"medium"}
-                className="text-dark-foreground-62 lg:max-w-md max-w-[200px]"
-                key={`${index}-photo`}
-              >
-                <li>{content}</li>
-              </Typography>
+              <li key={`${index}-photo`}>
+                <Typography
+                  weight={"medium"}
+                  className="text-dark-foreground-62 lg:max-w-md max-w-[200px]"
+                >
+                  {content}{" "}
+                </Typography>
+              </li>
             ))}
           </ul>
           <Typography

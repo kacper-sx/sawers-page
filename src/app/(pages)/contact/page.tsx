@@ -2,7 +2,8 @@ import { HeroOpacityBg } from "@/components/common/hero-pages";
 import { ContactContent } from "@/components/features/contact/contact";
 export const metadata = {
   title: "Kontakt | Sawers Saweczko Robert",
-  description: "Dane kontaktowe Sawers Saweczko Robert",
+  description:
+    "Dane kontaktowe i dane rejestrowe Sawers Saweczko Robert. Uzyskaj wycenę klimatyzacji i innych usług.",
 };
 export default function Home() {
   return (

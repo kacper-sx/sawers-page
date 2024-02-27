@@ -44,11 +44,19 @@ export default function BottomFooter() {
           Designed and developed by
         </Typography>
 
-        <CustomLink
+        <a
           href="https://www.facebook.com/kacper.saweczko"
-          className="uppercase"
-          text={"Kacper-sx"}
-        />
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Typography
+            variant="small2"
+            weight="semibold"
+            className="text-sawers-blue underline underline-offset-2 uppercase group-hover:text-dark-foreground"
+          >
+            Kacper-sx
+          </Typography>
+        </a>
       </div>
     </div>
   );

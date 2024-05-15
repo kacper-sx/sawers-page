@@ -35,9 +35,33 @@ const jsonLdData = {
     availableLanguage: ["pl"],
   },
 };
+
+const jsonLdDataBreadcrump = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [{
+      "@type": "ListItem",
+      position: 1,
+      name: "Strona Główna",
+      item: "https://sawers.pl"
+    },{
+      "@type": "ListItem",
+      position: 2,
+      name: "Usługi",
+      item: "https://sawers.pl/services"
+    },{
+      "@type": "ListItem",
+      position: 3,
+      name: "Kontakt",
+      item: "https://sawers.pl/kontakt"
+    }]
+  }
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL('https://www.sawers.pl/'),
+    alternates: {
+      canonical: "https://sawers.pl",
+    },
     title:
       'Sawers | Montaż klimatyzacji | Pompy Ciepła | Parczew',
     description:
@@ -83,6 +107,12 @@ export default function RootLayout({
         async
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+      />
+      <Script
+        id="jsonLdDataBreadcrump"
+        async
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdDataBreadcrump) }}
       />
       </head>
       <body

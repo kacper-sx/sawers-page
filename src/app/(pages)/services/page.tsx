@@ -5,6 +5,9 @@ import { Photovoltaic } from "@/components/features/services/3-photo/photo";
 import { SideServices } from "@/components/features/services/side-services/side-services";
 export const metadata = {
   title: "Usługi | Sawers Saweczko Robert",
+  alternates: {
+      canonical: "https://sawers.pl/services",
+    },
   description:
     "Klimatyzacja, pompy ciepła, fotowoltaika, monitoring i inne usuługi na terenie Parczewa",
 };

@@ -1,9 +1,9 @@
 "use client";
-import { Phone, Wrench, BookOpenText, PencilRuler } from "lucide-react";
+import { BookOpenText, PencilRuler, Phone, Wrench } from "lucide-react";
 import { useMediaQuery } from "usehooks-ts";
 
-import { IoMdArrowRoundDown } from "react-icons/io";
 import { HiArrowSmRight } from "react-icons/hi";
+import { IoMdArrowRoundDown } from "react-icons/io";
 
 type WorkData = {
   title: string;
@@ -42,7 +42,7 @@ export function HowWeWorkData() {
       title: "Realizacja",
       insideIcon: <PencilRuler className="w-8 h-8 text-sawers-blue" />,
       content:
-        "Po zaakceptowaniu oferty przystępujemy do działania czyli przyjeżdżamy na miejce, montujemy, szkolimy i wystawiamy fakturkę.",
+        "Po zaakceptowaniu oferty przystępujemy do działania czyli wykonujemy montaż klimatyzacji czy pompy ciepła, szkolimy i wystawiamy fakturkę.",
       outsideIcon: isMobile ? (
         <IoMdArrowRoundDown className="w-8 h-8 lg:w-16 lg:h-16 text-sawers-sun" />
       ) : (

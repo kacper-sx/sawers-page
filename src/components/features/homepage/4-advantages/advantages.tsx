@@ -1,11 +1,11 @@
 'use client'
 
-import { Typography } from '@/components/ui/typography/typography'
-import { AdvatagesList } from './list'
-import { m } from 'framer-motion'
-import { bottomOpacityEntranceVariant } from '@/lib/framer-variants'
-import Image from 'next/image'
 import { Banner } from '@/components/ui/custom/banner'
+import { Typography } from '@/components/ui/typography/typography'
+import { bottomOpacityEntranceVariant } from '@/lib/framer-variants'
+import { m } from 'framer-motion'
+import Image from 'next/image'
+import { AdvatagesList } from './list'
 
 const MotionTypography = m(Typography)
 const MotionBanner = m(Banner)
@@ -20,7 +20,7 @@ export function Advantages() {
         weight={'semibold'}
         className='text-sawers-blue text-center'
       >
-        Poznaj zalety z oferowanych produtków i usług
+        Montaż klimatyzacji i pompy ciepła - korzyści
       </MotionTypography>
 
       <MotionBanner

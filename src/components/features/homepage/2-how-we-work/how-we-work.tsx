@@ -1,13 +1,13 @@
 'use client'
-import { HowWeWorkData } from './data/how-we-work-data'
 import { Typography } from '@/components/ui/typography/typography'
-import { HowWeWorkSection } from './section'
-import { m } from 'framer-motion'
 import {
   WorkListItemVariants,
   WorkListVariants,
   bottomOpacityEntranceVariant,
 } from '@/lib/framer-variants'
+import { m } from 'framer-motion'
+import { HowWeWorkData } from './data/how-we-work-data'
+import { HowWeWorkSection } from './section'
 const MotionTypography = m(Typography)
 export function HowWeWork() {
   const workdata = HowWeWorkData()
@@ -18,10 +18,11 @@ export function HowWeWork() {
         whileInView='visible'
         variants={bottomOpacityEntranceVariant({ delay: 0.2 })}
         variant={'h2'}
+        as='h2'
         weight={'semibold'}
         className='text-sawers-blue'
       >
-        Jak pracujemy?
+        Jak przebiega montaż klimatyzacji?
       </MotionTypography>
 
       <m.ul

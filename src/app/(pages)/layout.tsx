@@ -1,22 +1,48 @@
+import Providers from '@/components/features/providers/providers'
+import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { source_sans_3, switzer } from '../fonts'
 import '../globals.css'
-import Providers from '@/components/features/providers/providers'
-import { cn } from '@/lib/utils'
 
-import Header from '@/components/features/header/header'
 import Footer from '@/components/features/footer/footer'
+import Header from '@/components/features/header/header'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Sawers Saweczko Robert",
+  description: "Sawers Saweczko Robert montaż klimatyzacji, fotowoltaika Parczew",
+  url: "https://sawers.pl",
+  logo: "https://sawers.pl/logos/logo.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "11 Listopada 66/23",
+    addressLocality: "Parczew",
+    addressRegion: "Lubelskie",
+    postalCode: "21-200",
+    addressCountry: "PL"
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+48-606-136-448",
+    contactType: "customer service",
+    email: "ser2332@wp.pl",
+    areaServed: "PL",
+    availableLanguage: ["pl"],
+  },
+};
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL('https://www.sawers.pl/'),
     title:
-      'Sawers | Klimatyzacja | Pompy Ciepła | Fotowoltaika | Monitoring | Parczew',
+      'Sawers | Montaż klimatyzacji | Pompy Ciepła | Parczew',
     description:
-      'Sawers Saweczko Robert to firma zajmująca się montażem klimatyzacji, pomp ciepła i fotowoltaiki na terenie Parczewa',
+      'Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.',
+    
     applicationName: 'Sawers Page',
     authors: [{ name: 'Sawers', url: 'https://sawers.pl/' }],
     generator: 'Next.js',
@@ -33,6 +59,15 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     creator: 'Kacper Saweczko,',
     robots: 'index, follow',
+    openGraph: {
+      type: "website",
+      url: "https://sawers.pl",
+      title: "Sawers Saweczko Robert",
+      description:
+        "Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.",
+      siteName: "Sawers Saweczko Robert",
+      images: [{ url: "https://sawers.pl/og-image.png" }],
+    },
   }
 }
 export default function RootLayout({
@@ -42,7 +77,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='pl'>
-      <head />
+      <head>
+        <Script
+        id="jsonLD"
+        async
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+      />
+      </head>
       <body
         className={cn(
           'font-switzer overflow-x-hidden scroll-smooth',

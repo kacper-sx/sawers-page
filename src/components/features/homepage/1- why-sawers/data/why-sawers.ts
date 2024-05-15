@@ -7,7 +7,7 @@ export const AccordionData: AccordionData[] = [
   {
     title: 'Doświadczenie',
     content:
-      'Działamy od ponad 15 lat. Posiadamy doświadczenie na ranku za równo krajowym jak i zagranicznym. Bez względu na skalę zlecenia, nasza firma podejmuje się wyzwań z pełnym zaangażowaniem i wiedzą zdobytą na przestrzeni lat.',
+      'Działamy od ponad 15 lat. Posiadamy doświadczenie na ranku za równo krajowym jak i zagranicznym. Bez względu na skalę zlecenia, nasza firma podejmuje się wyzwań z pełnym zaangażowaniem i wiedzą zdobytą na przestrzeni lat. Montaż klimatyzacji czy pompy ciepła to nasza specjalność.',
   },
   {
     title: 'Certyfikaty',

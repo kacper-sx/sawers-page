@@ -2,10 +2,9 @@
 import { Typography } from "@/components/ui/typography/typography";
 import { m } from "framer-motion";
 import Image from "next/image";
-import { MoveDown } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { IoMdArrowRoundDown } from "react-icons/io";
+import { Button } from "../ui/button";
 
 const MotionTypography = m(Typography);
 const MotionButton = m(Button);
@@ -43,6 +42,7 @@ export const HeroOpacityBg = ({
         <div className="flex flex-col gap-5 items-center">
           <Typography
             variant="h1"
+            as={"span"}
             weight={"bold"}
             className="lg:max-w-6xl text-sawers-blue text-center"
           >
@@ -51,6 +51,7 @@ export const HeroOpacityBg = ({
 
           <Typography
             variant="h2"
+            as={"span"}
             weight={"semibold"}
             className="text-sawers-sun text-center"
           >
@@ -58,6 +59,7 @@ export const HeroOpacityBg = ({
           </Typography>
           <Typography
             variant="p"
+            as="h1"
             weight={"semibold"}
             className="text-dark-foreground-62 text-center lg:pt-5"
           >

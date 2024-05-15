@@ -46,7 +46,7 @@ const AccordionTrigger = React.forwardRef<
       >
         <Typography
           variant='h4'
-          weight='medium'
+          weight='semibold'
           className='min-w-max text-sawers-blue'
         >
           {children}
@@ -105,7 +105,7 @@ const AccordionContent = React.forwardRef<
         {children}
       </div>
     ) : (
-      <Typography className='pt-4 text-dark-foreground-62 lg:pt-8'>
+      <Typography className='pt-4 text-sawers-blue lg:pt-8'>
         {children}
       </Typography>
     )}
@@ -114,3 +114,4 @@ const AccordionContent = React.forwardRef<
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger }
+

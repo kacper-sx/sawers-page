@@ -1,9 +1,9 @@
 'use client'
 
 import { Typography } from '@/components/ui/typography/typography'
-import { AccordionCard } from './accordion-card'
 import { bottomOpacityEntranceVariant } from '@/lib/framer-variants'
 import { m } from 'framer-motion'
+import { AccordionCard } from './accordion-card'
 const MotionTypography = m(Typography)
 export function WhySawers() {
   return (
@@ -13,10 +13,11 @@ export function WhySawers() {
         whileInView='visible'
         variants={bottomOpacityEntranceVariant({ delay: 0.2 })}
         variant={'h2'}
+        
         weight={'semibold'}
         className='text-sawers-blue text-center'
       >
-        A dlaczego właśnie ten Sawers?
+       Dlaczego montaż klimatyzacji czy pompy ciepła u Sawers?
       </MotionTypography>
       <AccordionCard className='w-full' />
     </div>

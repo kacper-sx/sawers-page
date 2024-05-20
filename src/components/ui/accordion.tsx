@@ -47,6 +47,7 @@ const AccordionTrigger = React.forwardRef<
         <Typography
           variant='h4'
           weight='semibold'
+          as='span'
           className='min-w-max text-sawers-blue'
         >
           {children}

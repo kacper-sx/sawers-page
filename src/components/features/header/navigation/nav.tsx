@@ -1,14 +1,14 @@
-import Link from "next/link";
-import Hamburger from "hamburger-react";
-import { useIsClient, useMediaQuery } from "usehooks-ts";
-import { useAtom } from "jotai";
 import { mobileNavAtom } from "@/atoms/mobileNav";
-import { RemoveScroll } from "react-remove-scroll";
 import Logo from "@/components/ui/assets/logo";
-import { AnimatePresence } from "framer-motion";
-import { Navigation } from "./mobile-nav";
-import { navListDataApp } from "../../../../data/nav-list-data";
 import { Typography } from "@/components/ui/typography/typography";
+import { AnimatePresence } from "framer-motion";
+import Hamburger from "hamburger-react";
+import { useAtom } from "jotai";
+import Link from "next/link";
+import { RemoveScroll } from "react-remove-scroll";
+import { useIsClient, useMediaQuery } from "usehooks-ts";
+import { navListDataApp } from "../../../../data/nav-list-data";
+import { Navigation } from "./mobile-nav";
 export default function NavBar() {
   const isMobile = useMediaQuery("(max-width: 767px)");
   const [{ open: isMenuOpen }, setMenuOpen] = useAtom(mobileNavAtom);
@@ -29,6 +29,7 @@ export default function NavBar() {
             >
               <Typography
                 variant={"h4"}
+                as="span"
                 className="text-sawers-blue active:text-sawers-red"
               >
                 {name}

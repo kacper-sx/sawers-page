@@ -1,6 +1,4 @@
-import Logo from '@/components/ui/assets/logo'
 import Link from 'next/link'
-import React from 'react'
 
 import { Typography } from '@/components/ui/typography/typography'
 
@@ -15,6 +13,7 @@ export function MainLinksSections({ name, href }: MainLinksType) {
       <Link href={href}>
         <Typography
           variant={'h4'}
+          as='span'
           weight={'medium'}
           className='text-sawers-blue border-b-2 border-sawers-sun max-w-max'
         >

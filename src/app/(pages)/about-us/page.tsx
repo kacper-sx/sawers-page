@@ -14,7 +14,7 @@ export default function Home() {
       <HeroOpacityBg
         heading={"O NAS"}
         subHeading={"Cały ten Sawers na papierze"}
-        src={"/photos/foto5.jpg"}
+        src={"/photos/foto5.webp"}
         paragraph={"No i w liczbach żeby nie było "}
         normal
       />

@@ -17,7 +17,7 @@ export default function Home() {
       <HeroOpacityBg
         heading={"USŁUGI"}
         subHeading={"Klimatyzacja, pompy ciepła, fotowoltaika i inne"}
-        src={"/photos/foto4.jpg"}
+        src={"/photos/foto4.webp"}
         paragraph={"Poznaj nasze lepsze i jeszcze lepsze specjalizacje"}
         isServices
       />

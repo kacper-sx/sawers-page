@@ -14,7 +14,7 @@ export default function Home() {
       <HeroOpacityBg
         heading={"KONTAKT"}
         subHeading={"Napisz, zadzwoń, pogadamy"}
-        src={"/photos/foto2.jpg"}
+        src={"/photos/foto2.webp"}
         paragraph={"Nie ważne jaki masz problem, pomożemy!"}
         isContact
       />

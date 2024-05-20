@@ -11,7 +11,7 @@ export default function Home() {
       <HeroOpacityBg
         heading={'SAWERS PARCZEW'}
         subHeading={'Za ciepło? Za zimno? Coś wymyślimy'}
-        src={'/photos/foto1.jpg'}
+        src={'/photos/foto1.webp'}
         paragraph={'Montaż klimatyzacji pompy ciepła Parczew'}
         normal
       />

@@ -35,7 +35,8 @@ export const HeroOpacityBg = ({
         alt="hero opacity bg"
         className="-z-10 object-cover fixed"
         fill
-        loading="lazy"
+        loading="eager"
+        fetchPriority="high"
       />
       <div className="flex flex-col lg:gap-24 gap-5 items-center w-full">
         <div className="flex w-full bg-dark-foreground-35 h-[2px]"></div>

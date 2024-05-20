@@ -36,6 +36,7 @@ export function Advantages() {
           width={500}
           height={500}
           className='object-cover '
+          loading='lazy'
         />
       </MotionBanner>
     </div>

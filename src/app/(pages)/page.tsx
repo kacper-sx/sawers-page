@@ -5,6 +5,7 @@ import { HowWeWork } from '@/components/features/homepage/2-how-we-work/how-we-w
 import { PhotoBg } from '@/components/features/homepage/3-photo/photo'
 import { Advantages } from '@/components/features/homepage/4-advantages/advantages'
 import { SeoFoodV1 } from '@/components/features/homepage/5-seo-food-v1/seo-food-v1'
+import { ServicesHomeSection } from '@/components/features/homepage/half-services/services-section'
 export default function Home() {
   return (
     <main className='w-full'>
@@ -15,6 +16,8 @@ export default function Home() {
         paragraph={'Montaż klimatyzacji pompy ciepła Parczew'}
         normal
       />
+
+      <ServicesHomeSection />
       <WhySawers />
       <HowWeWork />
       <PhotoBg />

@@ -81,6 +81,23 @@ export async function generateMetadata(): Promise<Metadata> {
       'Sawers Parczew',
       'Monitoring Parczew',
     ],
+    other: {
+			"DC.title":
+				"Sawers | Klimatyzacja | Pompy Ciepła | Fotowoltaika | Parczew",
+			"DC.description":
+				"Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.",
+			"DC.identifier": "https://sawers.pl",
+			"DC.creator": "Kacper-sx",
+			"DC.language": "pl",
+			"DC.rights": "Sawers Saweczko Robert",
+			"DC.publisher": "Sawers Saweczko Robert",
+			"DC.subject":
+				"Klimatyzacja, pompy ciepła, fotowoltaika Parczew, montaż klimatyzacji i pomp ciepła",
+			"DC.contributor": "Sawers Saweczko Robert",
+			"DC.type": "website",
+			"DC.coverage": "Poland",
+			"DC.format": "text/html",
+		},
     creator: 'Kacper Saweczko,',
     robots: 'index, follow',
     openGraph: {

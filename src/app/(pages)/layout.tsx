@@ -65,7 +65,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title:
       'Sawers | Montaż klimatyzacji | Pompy Ciepła | Parczew',
     description:
-      'Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.',
+      'Sawers Saweczko Robert montaż klimatyzacji, pompy ciepła, fotowoltaika Parczew. Oferujemy też montaż monitoringu. Klimatyzacja i serwis klimatyzacji.',
     
     applicationName: 'Sawers Page',
     authors: [{ name: 'Sawers', url: 'https://sawers.pl/' }],
@@ -85,14 +85,14 @@ export async function generateMetadata(): Promise<Metadata> {
 			"DC.title":
 				"Sawers | Klimatyzacja | Pompy Ciepła | Fotowoltaika | Parczew",
 			"DC.description":
-				"Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.",
+				"Sawers Saweczko Robert montaż klimatyzacji, pompy ciepła, fotowoltaika Parczew. Oferujemy też montaż monitoringu. Klimatyzacja i serwis klimatyzacji.",
 			"DC.identifier": "https://sawers.pl",
 			"DC.creator": "Kacper-sx",
 			"DC.language": "pl",
 			"DC.rights": "Sawers Saweczko Robert",
 			"DC.publisher": "Sawers Saweczko Robert",
 			"DC.subject":
-				"Klimatyzacja, pompy ciepła, fotowoltaika Parczew, montaż klimatyzacji i pomp ciepła",
+				"Klimatyzacja, pompy ciepła, fotowoltaika Parczew, montaż klimatyzacji, serwis klimatyzacji, monitoring.",
 			"DC.contributor": "Sawers Saweczko Robert",
 			"DC.type": "website",
 			"DC.coverage": "Poland",
@@ -105,7 +105,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: "https://sawers.pl",
       title: "Sawers Saweczko Robert",
       description:
-        "Sawers Saweczko Robert montaż klimatyzacji pompy ciepła Parczew. Zajmujemy się również sprzedażą fotowoltaiki i montażem monitoringu na terenie Parczewa.",
+        "Sawers Saweczko Robert montaż klimatyzacji, pompy ciepła, fotowoltaika Parczew. Oferujemy też montaż monitoringu. Klimatyzacja i serwis klimatyzacji.",
       siteName: "Sawers Saweczko Robert",
       images: [{ url: "https://sawers.pl/og-image.png" }],
     },

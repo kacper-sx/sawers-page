@@ -46,7 +46,7 @@ export const ServicesHomeSection = () => {
       <MotionTypography initial='hidden'
         whileInView='visible'
         variants={bottomOpacityEntranceVariant({ delay: 0.4 })} variant={"h4"} as="p" className="text-sawers-blue text-center max-w-5xl">
-        Sawers oferuje usługi z zakresu montażu klimatyzacji i pomp ciepła. Dodatkowo zajmujemy się sprzedażą fotowoltaiki. Działamy głównie w Parczewie, ale również w granicach całego województwa Lubelskiego. Sprawdź i dołącz do grona zadowolonych klientów.
+        Sawers oferuje profesjonalne usługi takie jak: <strong>montaż klimatyzacji</strong> i <strong>serwis klimatyzacji,</strong> kompleksową <strong>sprzedaż i montaż pomp ciepła.</strong> Dodatkowo prowadzimy również <strong>sprzedaż fotowoltaiki.</strong> Działamy głównie w Parczewie, ale również w granicach całego województwa Lubelskiego. Sprawdź Sawers <strong>klimatyzacja i pompy ciepła Parczew</strong> i dołącz do grona zadowolonych klientów.
       </MotionTypography>
     </div>
   )

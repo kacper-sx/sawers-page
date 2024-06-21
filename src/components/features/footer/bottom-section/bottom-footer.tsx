@@ -1,4 +1,3 @@
-import Logo from "@/components/ui/assets/logo";
 import { Typography } from "@/components/ui/typography/typography";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -37,7 +36,7 @@ export default function BottomFooter() {
       ></CustomLink>
 
       <Typography variant="small2" className="text-sawers-blue">
-        ©2023 - Sawers | All right reserved
+        ©2024 - Sawers | All right reserved
       </Typography>
       <div className="flex items-center gap-1">
         <Typography variant="small2" className="text-sawers-blue">
